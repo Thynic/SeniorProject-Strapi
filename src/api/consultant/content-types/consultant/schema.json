@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "consultants",
+  "info": {
+    "singularName": "consultant",
+    "pluralName": "consultants",
+    "displayName": "Consultant",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "clients": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::client.client"
+    }
+  }
+}
