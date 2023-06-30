@@ -99,6 +99,8 @@ node_modules
 # Tests
 ############################
 
+.env
+
 testApp
 coverage
 
